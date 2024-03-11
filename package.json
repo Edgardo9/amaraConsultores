@@ -9,7 +9,7 @@
         "test": "ng test",
         "build:href": "ng build --base-href ./",
         "delete:docs": "del-cli docs",
-        "copy:dist": "copyfiles -a -f dist/amara-web/browser/* ./docs",
+        "copy:dist": "copyfiles -f -a dist/amara-web/browser/* ./docs",
         "build:github": "npm run delete:docs && npm run build:href && npm run copy:dist"
     },
     "private": true,

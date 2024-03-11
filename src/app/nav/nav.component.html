@@ -2,7 +2,7 @@
     <div class="container">
         <nav class="navbar bg-body-tertiary">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" [routerLink]="['home']">
                     <img src="assets/images/main.png" alt="amara-solutions-logo" width="120">
                 </a>
             </div>
@@ -14,15 +14,27 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item px-3">
+                        <a class="nav-link" aria-current="page" href="#mainCarousel"><i class="bi-house me-2" style=" color: cornflowerblue;"></i>Home</a>
+                    </li>
+                    <li class="nav-item px-3">
                         <a class="nav-link" aria-current="page" href="#productos"><i class="bi bi-bag-check me-2" style=" color: cornflowerblue;"></i>Productos</a>
                     </li>
-                    <li class="nav-item px-3 me-5">
+                    <li class="nav-item px-3">
                         <a class="nav-link" href="#servicios"><i class="bi bi-gear me-2" style=" color: cornflowerblue;"></i>Servicios</a>
                     </li>
+                    <li class="nav-item dropdown px-3 me-5">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-puzzle me-2" style=" color: cornflowerblue;"></i>Partners
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a [routerLink]="['ivanti']" class="dropdown-item">Ivanti</a></li>
+                            <!-- <li><a [routerLink]="['proactivanet']" class="dropdown-item">Proactivanet</a></li> -->
+                        </ul>
+                    </li>
                 </ul>
-                <span class="iconNav">
+                <!-- <span class="iconNav">
                     <i class="bi bi-building-fill-check" style="font-size: 2rem; color: cornflowerblue;"></i>
-                </span>
+                </span> -->
             </div>
         </div>
     </div>

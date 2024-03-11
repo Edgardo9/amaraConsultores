@@ -1,0 +1,44 @@
+#mainIvanti {
+    background-image: url("../../../assets/partners/ivanti/mainAvanti.png");
+    text-align: center;
+    color: #fff;
+}
+
+#mainIvanti p {
+    font-size: medium;
+    font-weight: 400;
+}
+
+.icon-border-round {
+    width: 80px;
+    height: 80px;
+    border-color: #f00;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.icon-border-round svg {
+    color: #f00;
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 1400px) {
+    #avantiSection1 .row {
+        text-align: -webkit-center;
+    }
+}
+
+@media (max-width: 1199px) {
+    .imgSeccion {
+        display: none;
+    }
+}
+
+@media (min-width: 1400px) {
+    .imgSeccion {
+        margin-top: 40px;
+        max-width: 70%;
+    }
+}

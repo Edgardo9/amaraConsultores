@@ -2,7 +2,7 @@
     <div class="container">
         <nav class="navbar bg-body-tertiary">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" [routerLink]="['home']">
                     <img src="assets/images/main.png" alt="amara-solutions-logo" width="120">
                 </a>
             </div>
@@ -24,8 +24,8 @@
                             <i class="bi bi-puzzle me-2" style=" color: cornflowerblue;"></i>Partners
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Ivanti</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a [routerLink]="['ivanti']" class="dropdown-item">Ivanti</a></li>
+                            <li><a [routerLink]="['proactivanet']" class="dropdown-item">Proactivanet</a></li>
                         </ul>
                     </li>
                 </ul>

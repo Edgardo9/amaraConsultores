@@ -9,6 +9,7 @@ import { SeccionComponent } from '../seccion/seccion.component';
 import { FooterComponent } from '../footer/footer.component';
 import { ProductosComponent } from '../productos/productos.component';
 import { ServiciosComponent } from '../servicios/servicios.component';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-home',

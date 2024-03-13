@@ -11,6 +11,10 @@ import { iSection} from './ISection';
 })
 
 export class IvantiComponent {
+
+    constructor (){
+      window.scrollBy(0, 0);
+    }
   
    section1: iSection[] = [
     {

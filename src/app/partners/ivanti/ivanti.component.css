@@ -2,6 +2,7 @@
     background-image: url("../../../assets/partners/ivanti/mainAvanti.png");
     text-align: center;
     color: #fff;
+    border-radius: 12px;
 }
 
 #mainIvanti p {
@@ -24,6 +25,10 @@
     height: 40px;
 }
 
+#bannerIvanti {
+    border-radius: 12px;
+}
+
 @media (max-width: 1400px) {
     #avantiSection1 .row {
         text-align: -webkit-center;
@@ -33,6 +38,12 @@
 @media (max-width: 1199px) {
     .imgSeccion {
         display: none;
+    }
+    #mainIvanti {
+        background-image: url("../../../assets/partners/ivanti/mainAvanti.png");
+        background-repeat: repeat;
+        background-size: 100% 100%;
+        border-radius: 12px;
     }
 }
 

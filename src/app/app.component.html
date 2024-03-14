@@ -1,21 +1,5 @@
 <app-nav></app-nav>
 
-<app-carousel></app-carousel>
-<app-separator></app-separator>
-
-<app-cards></app-cards>
-<app-separator></app-separator>
-
-<app-seccion></app-seccion>
-<div id="productos"></div>
-<!--Se deja id con el nombre del componente, solo por el anchor ya que si lo dejaba donde corresponde, este es tapado por el nav -->
-<app-separator></app-separator>
-
-<app-productos [productos]="listProds"></app-productos>
-<div id="servicios"></div>
-<!--Se deja id con el nombre del componente, solo por el anchor ya que si lo dejaba donde corresponde, este es tapado por el nav -->
-<app-separator></app-separator>
-
-<app-servicios [servicios]="listServs"></app-servicios>
+<router-outlet></router-outlet>
 
 <app-footer [productos]="listProds" [servicios]="listServs"></app-footer>

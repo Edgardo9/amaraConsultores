@@ -9,7 +9,6 @@ import { SeccionComponent } from '../seccion/seccion.component';
 import { FooterComponent } from '../footer/footer.component';
 import { ProductosComponent } from '../productos/productos.component';
 import { ServiciosComponent } from '../servicios/servicios.component';
-import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-home',
@@ -27,6 +26,6 @@ import { AppComponent } from '../app.component';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  listProds = ["Soluciones de control de inventario de hardware y software", "Soluciones de mesa de servicios certificadas bajo ITILv4", "Soluciones de Backup"];
+  listProds = ["Soluciones de control de inventario de hardware y software", "Soluciones de mesa de servicios certificadas bajo ITIL4", "Soluciones de Backup"];
   listServs = ["Consultoría ITIL", "Soluciones ITSM e ITAM", "Servicios administrados"];
 }

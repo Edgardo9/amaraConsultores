@@ -1,1 +1,61 @@
-<p>proactivanet works!</p>
+<div class="container my-4 fadeIn">
+    <div class="card text-center welcome-proactiva my-5">
+        <div class="card-header p-5">
+            <img src="./assets/partners/proactiva/logo-proactiva-fondo.png" class="rounded mx-auto d-block w-25" alt="..." />
+        </div>
+        <div class="card-body p-5">
+            <h3 class="card-title">En nuestro sector, solo conozco dos ingredientes para hacer bien las cosas: el talento de las personas de nuestro equipo, y el compromiso que tengamos con el éxito de nuestros clientes. No hay más.</h3>
+            <P class="fw-lighter text-end mt-4">Isabel Lombardia, Co-founder de Proactivanet</P>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container my-5 py-4 text-center seccionProactiva">
+        <div class="col-12">
+            <h1>Lideres en latino america</h1>
+            <p class="p-3 ">Nuestra expansión internacional es resultado del compromiso con el cliente, la calidad, la excelencia y el talento de las personas de nuestro equipo.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 metricas" *ngFor="let item of metricasLideres">
+                <span class="fs-1 fw-bold">{{item.valor}}</span>
+                <p class="fs-5 fw-semibold">{{item.desc}}</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container my-5 py-4 text-center seccionProactiva">
+        <div class="col-12">
+            <h1>Soporte Local y en español</h1>
+            <p class="p-3 ">Proactivanet tiene oficinas en 5 países</p>
+        </div>
+        <div class="row mb-5">
+            <div class="col-xl-1"></div>
+            <div *ngFor="let item of soportePais" class="{{item.clases}}">
+                <div class="card">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="45" fill="currentColor" s class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                          </svg>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{item.pais}}</h5>
+                        <p class="card-text">{{item.direccion}}</p>
+                        <p class="card-text"><span class="fw-bold">{{item.ciudad}}</span></p>
+                        <p class="card-text">Teléfono: <span class="fw-bold">{{item.telefono}}</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 metricas" *ngFor="let item of metricasSoporte">
+                <span class="fs-1 fw-bold">{{item.valor}}</span>
+                <p class="fs-5 fw-semibold">{{item.desc}}</p>
+            </div>
+        </div>
+    </div>
+
+</div>

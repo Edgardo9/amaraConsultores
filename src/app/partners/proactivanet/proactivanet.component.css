@@ -27,6 +27,20 @@ h1,
     text-align: center;
 }
 
+.texto-modulo-discovery {
+    text-align: justify;
+}
+
+.contactoProactiva a {
+    color: black;
+    text-decoration: none;
+}
+
+.contactoProactiva a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 @media (min-width: 992px) {
     .metricas {
         border-left: #009fd7 solid 4px;
@@ -48,6 +62,9 @@ h1,
     }
     .metricas:last-child {
         border-bottom: none
+    }
+    .gartner-peer-insights {
+        width: 30% !important;
     }
 }
 

@@ -1,6 +1,6 @@
 #navMain {
     box-shadow: 0 0 15px rgba(0, 0, 0, .25);
-    background: linear-gradient( 45deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 50%, #81b5e8 50%);
+    background: linear-gradient( 45deg, rgba(0, 0, 0, 0) 50%, #81b5e8 50%);
 }
 
 #navMain:only-child nav {

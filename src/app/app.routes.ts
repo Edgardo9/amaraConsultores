@@ -16,8 +16,6 @@ export const routes: Routes = [
         path: "proactivanet", 
         component: ProactivanetComponent
     },
-    { 
-        path: '**',
-        redirectTo: "home"
-    }
+    {path: '', component: HomeComponent, pathMatch: 'full'},
+    {path: '**', component: HomeComponent}
 ];

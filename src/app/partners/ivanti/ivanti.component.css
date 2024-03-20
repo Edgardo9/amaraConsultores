@@ -25,6 +25,10 @@
     font-weight: 400;
 }
 
+.imgSeccion {
+    box-shadow: 0 0 15px rgba(0, 0, 0, .25);
+}
+
 .icon-border-round {
     width: 80px;
     height: 80px;

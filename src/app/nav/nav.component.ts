@@ -11,5 +11,40 @@ import { RouterLink } from '@angular/router';
 })
 
 export class NavComponent {
+
+  constructor(){}
   
+  public flechaClass: string = "bi bi-caret-down-fill";
+  public menuColapso: boolean = true;
+
+  public changeFlecha():void {
+    if (this.flechaClass === "bi bi-caret-down-fill") {
+      this.flechaClass = "bi bi-caret-up-fill";
+    }else {
+      this.flechaClass = "bi bi-caret-down-fill";
+    }
+  }
+
+  public collapseElements(): void {
+    let elementToColapse = document.getElementById("collapsePartners");
+    if(elementToColapse?.classList.contains("show")) {
+      elementToColapse.classList.remove("show");
+      this.changeFlecha();
+    }
+
+    this.setMenuColapso()
+  }
+
+  public collapseElementsMenuClick(): void {
+    let elementToColapse = document.getElementById("navbarSupportedContent");
+    if(elementToColapse?.classList.contains("show")) {
+      elementToColapse.classList.remove("show");
+    }
+    this.setMenuColapso()
+  }
+
+  public setMenuColapso(): void {
+    this.menuColapso = !this.menuColapso;
+  }
 }
+

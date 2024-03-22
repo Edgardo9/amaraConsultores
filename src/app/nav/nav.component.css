@@ -1,6 +1,20 @@
+.fadeIn {
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 #navMain {
     box-shadow: 0 0 15px rgba(0, 0, 0, .25);
-    background: linear-gradient( 45deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 50%, #81b5e8 50%);
+    background: linear-gradient( 45deg, rgba(0, 0, 0, 0) 50%, #81b5e8 50%);
+    height: 160px;
 }
 
 #navMain:only-child nav {
@@ -11,6 +25,18 @@
     width: 140px;
 }
 
+.arrow-right {
+    position: absolute;
+    left: 90%;
+}
+
+.menu-hide {
+    position: fixed;
+    top: 159px;
+    width: 100%;
+    z-index: 1020;
+}
+
 @media (max-width: 992px) {
     #mainAmaraImg {
         width: 90px;
@@ -19,9 +45,21 @@
 
 @media (max-width: 516px) {
     #mainAmaraImg {
-        width: 90px;
+        width: 75px;
     }
     #navMain {
         background: linear-gradient( 45deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 80%, #81b5e8 80%);
+    }
+}
+
+@media (max-width: 280px) {
+    #mainAmaraImg {
+        width: 60px;
+    }
+}
+
+@media (min-width: 992px) {
+    .menu-hide {
+        display: none;
     }
 }

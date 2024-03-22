@@ -1,3 +1,16 @@
+.fadeIn {
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 #mainIvanti {
     background-image: url("../../../assets/partners/ivanti/mainAvanti.png");
     text-align: center;
@@ -10,6 +23,10 @@
 #mainIvanti p {
     font-size: medium;
     font-weight: 400;
+}
+
+.imgSeccion {
+    box-shadow: 0 0 15px rgba(0, 0, 0, .25);
 }
 
 .icon-border-round {

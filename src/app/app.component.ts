@@ -18,7 +18,7 @@ import { FooterComponent } from './footer/footer.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Amara Consultores';
-  listProds = ["Soluciones de control de inventario de hardware y software", "Soluciones de mesa de servicios certificadas bajo ITILv4", "Soluciones de Backup"];
-  listServs = ["Consultoría ITIL", "Soluciones ITSM e ITAM", "Servicios administrados"];
+  public title:string = 'Amara Consultores';
+  public listProds:string[] = ["Soluciones de control de inventario de hardware y software", "Soluciones de mesa de servicios certificadas bajo ITIL4", "Soluciones de Backup"];
+  public listServs:string[] = ["Consultoría ITIL", "Soluciones ITSM e ITAM", "Servicios administrados"];
 }

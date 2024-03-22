@@ -11,5 +11,5 @@ import { CommonModule } from '@angular/common';
 export class FooterComponent {
   @Input() servicios:any;
   @Input() productos:any;
-  linkedn = 'https://www.linkedin.com/in/andres-felipe-aravena-araya-44392023/'
+  linkedn = 'https://www.linkedin.com/company/amara-consultores/'
 }

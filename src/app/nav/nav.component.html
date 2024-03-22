@@ -1,17 +1,15 @@
-<nav id="navMain" class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+<nav id="navMain" class="navbar navbar-expand-lg bg-body-tertiary sticky-top px-5">
     <div class="container-fluid">
-        <nav class="navbar bg-body-tertiary">
-            <div class="container">
-                <a class="navbar-brand" [routerLink]="['home']">
-                    <img id="mainAmaraImg" src="assets/images/main.png" alt="amara-solutions-logo">
-                </a>
-            </div>
-        </nav>
-        <div class="ms-auto me-5">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <div class="navbar">
+            <a class="navbar-brand" [routerLink]="['home']">
+                <img id="mainAmaraImg" src="assets/images/main.png" alt="amara-solutions-logo">
+            </a>
+        </div>
+        <div class="ms-auto">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)="collapseElements();">
+                <span class="navbar-toggler-icon" [ngClass]="{'btn-close': menuColapso == false}"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item px-3">
                         <a class="nav-link" aria-current="page" href=""><i class="bi-house-fill me-2" style=" color: #4142c0 "></i>Home</a>
@@ -20,15 +18,15 @@
                         <a class="nav-link" aria-current="page" href="#productos"><i class="bi bi-bag-check-fill me-2" style=" color: #4142c0 "></i>Productos</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link" href="#servicios"><i class="bi bi-gear-fill me-2" style=" color: #4142c0 "></i>Servicios</a>
+                        <a class="nav-link" aria-current="page" href="#servicios"><i class="bi bi-gear-fill me-2" style=" color: #4142c0 "></i>Servicios</a>
                     </li>
-                    <li class="nav-item dropdown px-3 me-5">
+                    <li class="nav-item dropdown px-3">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="bi bi-puzzle-fill me-2" style="color: #4142c0 ;"></i>Partners
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a [routerLink]="['ivanti']" onClick="" class="dropdown-item">Ivanti</a></li>
-                            <!-- <li><a [routerLink]="['proactivanet']" class="dropdown-item">Proactivanet</a></li> -->
+                            <li><a [routerLink]="['proactivanet']" class="dropdown-item">Proactivanet</a></li>
+                            <li><a [routerLink]="['ivanti']" class="dropdown-item">Ivanti</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -36,3 +34,29 @@
         </div>
     </div>
 </nav>
+<div class="container-fluid menu-hide">
+    <div id="navbarSupportedContent" class="collapse">
+        <ul class="list-group bg-body-tertiary">
+            <li class="list-group-item">
+                <a class="nav-link" aria-current="page" href="">Home</a>
+            </li>
+            <li class="list-group-item" (click)="collapseElementsMenuClick()">
+                <a class="nav-link" aria-current="page" href="#productos">Productos</a>
+            </li>
+            <li class="list-group-item" (click)="collapseElementsMenuClick()">
+                <a class="nav-link" href="#servicios">Servicios</a>
+            </li>
+            <li class="list-group-item dropdown">
+                <a class="nav-link" data-bs-toggle="collapse" href="#collapsePartners" role="button" aria-expanded="false" aria-controls="collapsePartners" (click)="changeFlecha();">
+                    Partners <span class="arrow-right"><i class="{{flechaClass}}"></i></span>
+                </a>
+                <div class="collapse" id="collapsePartners">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" (click)="collapseElementsMenuClick()"><a [routerLink]="['proactivanet']" class="dropdown-item">Proactivanet</a></li>
+                        <li class="list-group-item" (click)="collapseElementsMenuClick()"><a [routerLink]="['ivanti']" class="dropdown-item">Ivanti</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,16 +1,3 @@
-.fadeIn {
-    animation: fadeIn 3s;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 .card {
     box-shadow: 0 0 15px rgba(0, 0, 0, .25);
 }
@@ -31,8 +18,9 @@ h1,
     text-align: center;
 }
 
-.texto-modulo-discovery {
-    text-align: justify;
+.certificaciones {
+    display: block;
+    margin: 0 auto;
 }
 
 .contactoProactiva a {

@@ -24,11 +24,11 @@ export class ProactivanetComponent {
     },
     {
       valor: "70%",
-      desc: "de actividad en Latinoamerica"
+      desc: "de actividad en Latinoamérica"
     },
     {
       valor: "+15",
-      desc: "paises"
+      desc: "países"
     },
     {
       valor: "25",
@@ -39,7 +39,7 @@ export class ProactivanetComponent {
   public metricasSoporte:any[] = [
     {
       valor: "4,9 / 5",
-      desc: "Valoracion en Gartner Peer Insights"
+      desc: "Valoración en Gartner Peer Insights"
     },
     {
       valor: "96%",

@@ -5,6 +5,8 @@
 .welcome-proactiva .card-header {
     background: url("../../../assets/partners/proactiva/fondo-azul-1.png");
     background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .seccionProactiva {
@@ -21,6 +23,7 @@ h1,
 .certificaciones {
     display: block;
     margin: 0 auto;
+    width: 50%;
 }
 
 .contactoProactiva a {
@@ -31,6 +34,30 @@ h1,
 .contactoProactiva a:hover {
     text-decoration: underline;
     font-weight: bold;
+}
+
+.peoplecert {
+    width: 35%;
+}
+
+.fondo-clientes {
+    background: url("../../../assets/partners/proactiva/fondo-azul-1.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    padding: 80px 10px;
+    border-radius: 12px;
+}
+
+.fondo-clientes h1 {
+    color: #fff;
+}
+
+.banner:hover {
+    border-color: rgb(0, 159, 215, .5);
+    box-shadow: 0px 0px 10px rgb(0, 159, 215, .5);
+    animation: 1s;
 }
 
 @media (min-width: 992px) {
@@ -48,8 +75,6 @@ h1,
 @media (max-width: 992px) {
     .metricas {
         border: none;
-    }
-    .metricas {
         border-bottom: #009fd7 solid 1px;
     }
     .metricas:last-child {
@@ -57,6 +82,12 @@ h1,
     }
     .gartner-peer-insights {
         width: 30% !important;
+    }
+    .certificaciones {
+        width: 30%;
+    }
+    .certificaciones.peoplecert {
+        width: 25%;
     }
 }
 

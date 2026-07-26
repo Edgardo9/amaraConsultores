@@ -4,8 +4,14 @@ footer {
 }
 
 .legal__pop {
+    display: inline-block;
     color: black;
     text-decoration: none;
+    transition: transform .5s;
+}
+
+.legal__pop:hover {
+    transform: scale(1.1);
 }
 
 @media (max-width: 1199px) {

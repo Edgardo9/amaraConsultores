@@ -42,10 +42,6 @@
     transition: transform .5s;
 }
 
-.nav-link:hover {
-    transform: scale(1.1) translateY(-2px);
-}
-
 @media (max-width: 992px) {
     #mainAmaraImg {
         width: 90px;

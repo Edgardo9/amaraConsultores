@@ -8,14 +8,15 @@ export const routes: Routes = [
         path: "home", 
         component: HomeComponent
     },
-    { 
-        path: "ivanti", 
-        component: IvantiComponent
-    },
-    { 
-        path: "proactivanet", 
-        component: ProactivanetComponent
-    },
     {path: '', component: HomeComponent, pathMatch: 'full'},
     {path: '**', component: HomeComponent}
+    // { 
+    //     path: "ivanti", 
+    //     component: IvantiComponent
+    // },
+    // { 
+    //     path: "proactivanet", 
+    //     component: ProactivanetComponent
+    // },
+    
 ];
